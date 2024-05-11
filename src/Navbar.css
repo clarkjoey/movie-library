@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.upload-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dashboard-title {
+    margin: 0;
+}
+
+.upload-text {
+    font-size: 16px;
+}
+
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
