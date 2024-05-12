@@ -1,0 +1,74 @@
+.movie-image[alt="Blank"] {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.stacked-movie-image {
+    height: 285px;
+    width: 190px;
+    position: absolute;
+}
+
+.stacked-movie-image[image-index='0'] {
+    z-index: 1;
+    top: 10px;
+    left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.stacked-movie-image[image-index='1'] {
+    top: 20px;
+    left: 10px;
+    box-shadow: unset;
+}
+
+.stacked-movie-image[image-index='0'] {
+    transition: transform 0.3s ease-in-out;  
+}
+
+.stacked-movie-image[image-index='0']:hover {
+    animation: showNextMovePulse 1s ease-in-out infinite;
+}
+
+@keyframes showNextMovePulse {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(10px, -10px);
+    }
+}
+
+.stacked-movie-image:not([image-index='0']):not([image-index='1']) {
+    display: none;
+}
+
+.series-icon {
+    position: absolute;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.series-icon:not(.series-icon-back) {
+    background-color: white;
+}
+
+.series-icon:hover {
+    transform: translate(5px, -5px);
+    opacity: 1;
+}
+
+.series-icon-back {
+    position: absolute;
+    opacity: 0;
+}
+
+.click-area {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
