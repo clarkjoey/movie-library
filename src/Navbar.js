@@ -10,14 +10,14 @@ function Navbar() {
     <div className="navigation">
       <h1 className="dashboard-title">Movies</h1>
       <div className="upload-area">
-        <button className="upload-button btn btn-outline-dark" type="button">
+        <button className="upload-button btn btn-outline-light" type="button">
           <span className="upload-button-text">Bulk Upload</span>
           <FontAwesomeIcon
             className="icon upload-icon-multiple"
             icon={faFileCsv}
           />
         </button>
-        <button className="upload-button btn btn-dark" type="button">
+        <button className="upload-button btn btn-light" type="button">
           <span className="upload-button-text">Add A Movie</span>
           <FontAwesomeIcon
             className="icon upload-icon-single"

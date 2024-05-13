@@ -9,10 +9,11 @@
     left: 0;
     position: fixed;
     z-index: 10;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgb(146, 200, 253, 0.4);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);  
+    border: none;
 }
 
 .upload-area {
@@ -26,7 +27,7 @@
     text-transform: uppercase;
     margin: 0;
     padding: 10px 20px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .upload-button {
@@ -56,7 +57,7 @@
 }
 
 .upload-icon-single {
-    color: #ffffff;
+    color: #000000;
 }
 
 .btn-outline-dark:hover .icon {
